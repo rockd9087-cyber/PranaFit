@@ -467,7 +467,7 @@
 
         // Update UI immediately with exact GPS coords
         if (titleEl) {
-          titleEl.innerText = `${matchedLoc.name}, ${matchedLoc.city} (${lat.toFixed(4)}° N, ${lng.toFixed(4)}° E)`;
+          titleEl.innerText = `${matchedLoc.name}, ${matchedLoc.city} (${lat.toFixed(6)}° N, ${lng.toFixed(6)}° E)`;
         }
         if (subEl) {
           subEl.innerHTML = `● High-Precision GPS Active (±${accuracy}m accuracy) • Exact coordinates locked • Delivery radius: 5 km`;
@@ -488,7 +488,7 @@
               const city = geoData.address.city || geoData.address.town || geoData.address.city_district || matchedLoc.city;
               const stateName = geoData.address.state || matchedLoc.state;
               const exactResolved = road ? `${road}, ${city}` : `${city}, ${stateName}`;
-              nearbyFoodState.detectedLocation.title = `${exactResolved} (${lat.toFixed(4)}° N, ${lng.toFixed(4)}° E)`;
+              nearbyFoodState.detectedLocation.title = `${exactResolved} (${lat.toFixed(6)}° N, ${lng.toFixed(6)}° E)`;
               if (titleEl) {
                 titleEl.innerText = nearbyFoodState.detectedLocation.title;
               }
@@ -513,7 +513,7 @@
         }
 
         if (window.showToast) {
-          window.showToast(`📍 Exact Location Detected (${lat.toFixed(4)}° N, ${lng.toFixed(4)}° E)! Clean kitchens calibrated to your diet.`);
+          window.showToast(`📍 Exact Location Detected (${lat.toFixed(6)}° N, ${lng.toFixed(6)}° E)! Clean kitchens calibrated to your diet.`);
         }
       },
       (err) => {
