@@ -1,0 +1,11 @@
+{
+  "name": "PranaFit - Holistic Lifestyle & Health Assistant",
+  "description": "Innovative holistic fitness and lifestyle assistant with emotion-based workouts, gender-specific physiology routines, location-based cultural nutrition covering all regions of India, animated yoga and exercise guides, AI symptom & problem healing analyzer with dietary prescriptions, micro-goals, preventive alerts, and gamified green points.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "PranaFit - Holistic Lifestyle & Health Assistant",
+  "description": "Innovative holistic fitness and lifestyle assistant with live geolocation healthy food orders from nearby places, real human body animated yoga and exercise guides, AI symptom & problem healing analyzer with dietary prescriptions, smartwatch telemetry sync, micro-goals, and gamified green points.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
